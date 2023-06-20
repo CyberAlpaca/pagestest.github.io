@@ -8,8 +8,14 @@
       
       
       
+      
+        <link rel="prev" href="../report/">
+      
+      
+        <link rel="next" href="../video/">
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.16">
     
     
       
@@ -17,13 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
-      
-        
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
-        
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
       
       
+
     
     
     
@@ -38,23 +41,21 @@
     
       <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
+    
   </head>
   
   
-    
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+    <body dir="ltr">
   
     
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -74,7 +75,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="Squape documentaion" class="md-header__button md-logo" aria-label="Squape documentaion" data-md-component="logo">
       
@@ -118,7 +121,7 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
@@ -130,7 +133,7 @@
           <div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -186,17 +189,18 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
       
       
       
-      
-        <label class="md-nav__link" for="__nav_1">
+        <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
           Code Reference
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Code Reference" data-md-level="1">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_1">
           <span class="md-nav__icon md-icon"></span>
           Code Reference
@@ -226,7 +230,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
       
@@ -579,10 +583,11 @@
               </div>
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
                 
+                  
 
 
   <h1>settings</h1>
@@ -636,7 +641,11 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-breakonfailure</p>
           <td>
                 <code>bool</code>
           </td>
-          <td><p>Whether to enable the debugger to stop</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether to enable the debugger to stop</p>
+            </div>
+          </td>
           <td>
                 <code>True</code>
           </td>
@@ -644,13 +653,13 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-breakonfailure</p>
     </tbody>
   </table>
 
-<details class="example">
-  <summary>Example</summary>
-  <p>with breakOnFailure():
-    # code with verifications</p>
-</details>
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">breakOnFailure</span><span class="p">():</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="c1"># code with verifications</span>
+</code></pre></div>
+
       <details class="quote">
-        <summary>Source code in <code>squape\settings.py</code></summary>
+        <summary>Source code in <code>D:\Coding\pagestest.github.io\documentation\project\squape\settings.py</code></summary>
         <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">289</span>
 <span class="normal">290</span>
 <span class="normal">291</span>
@@ -667,16 +676,16 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-breakonfailure</p>
 <span class="normal">302</span>
 <span class="normal">303</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@contextmanager</span>
 <span class="k">def</span> <span class="nf">breakOnFailure</span><span class="p">(</span><span class="n">enabled</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Allows using breakOnFailure test setting as context managers.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Allows using breakOnFailure test setting as context managers.</span>
 <span class="sd">    https://doc.qt.io/squish/squish-api.html#bool-testsettings-breakonfailure</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        enabled (bool): Whether to enable the debugger to stop</span>
 <span class="sd">        on every failed verification</span>
 
-<span class="sd">    Example:</span>
-<span class="sd">        with breakOnFailure():</span>
-<span class="sd">            # code with verifications</span>
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; with breakOnFailure():</span>
+<span class="sd">        &gt;&gt;&gt;     # code with verifications</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">with</span> <span class="n">_ctx_settings</span><span class="p">(</span><span class="s2">&quot;breakOnFailure&quot;</span><span class="p">,</span> <span class="n">enabled</span><span class="p">):</span>
         <span class="k">yield</span>
@@ -717,7 +726,11 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-defaultocrlanguage</p
           <td>
                 <code>str</code>
           </td>
-          <td><p>string text representing the Language to be used</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>string text representing the Language to be used</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -725,14 +738,14 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-defaultocrlanguage</p
     </tbody>
   </table>
 
-<details class="example">
-  <summary>Example</summary>
-  <p>with defaultOcrLanguage("Polish"):
-    waitForOcrText("Dom")
-    waitForOcrText("Miasto")</p>
-</details>
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">defaultOcrLanguage</span><span class="p">(</span><span class="s2">&quot;Polish&quot;</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">waitForOcrText</span><span class="p">(</span><span class="s2">&quot;Dom&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">waitForOcrText</span><span class="p">(</span><span class="s2">&quot;Miasto&quot;</span><span class="p">)</span>
+</code></pre></div>
+
       <details class="quote">
-        <summary>Source code in <code>squape\settings.py</code></summary>
+        <summary>Source code in <code>D:\Coding\pagestest.github.io\documentation\project\squape\settings.py</code></summary>
         <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">271</span>
 <span class="normal">272</span>
 <span class="normal">273</span>
@@ -750,17 +763,17 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-defaultocrlanguage</p
 <span class="normal">285</span>
 <span class="normal">286</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@contextmanager</span>
 <span class="k">def</span> <span class="nf">defaultOcrLanguage</span><span class="p">(</span><span class="n">language</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Allows using defaultOcrLanguage test setting as context managers.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Allows using defaultOcrLanguage test setting as context managers.</span>
 <span class="sd">    https://doc.qt.io/squish/squish-api.html#bool-testsettings-defaultocrlanguage</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        language (str): string text representing the Language to be used</span>
 <span class="sd">        for OCR Text search</span>
 
-<span class="sd">    Example:</span>
-<span class="sd">        with defaultOcrLanguage(&quot;Polish&quot;):</span>
-<span class="sd">            waitForOcrText(&quot;Dom&quot;)</span>
-<span class="sd">            waitForOcrText(&quot;Miasto&quot;)</span>
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; with defaultOcrLanguage(&quot;Polish&quot;):</span>
+<span class="sd">        &gt;&gt;&gt;     waitForOcrText(&quot;Dom&quot;)</span>
+<span class="sd">        &gt;&gt;&gt;     waitForOcrText(&quot;Miasto&quot;)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">with</span> <span class="n">_ctx_settings</span><span class="p">(</span><span class="s2">&quot;defaultOcrLanguage&quot;</span><span class="p">,</span> <span class="n">language</span><span class="p">):</span>
         <span class="k">yield</span>
@@ -787,14 +800,14 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-imagenotfounddebuggin
 <p>Args:
     enabled (bool): Whether to enable debugging when image is not found.</p>
 
-<details class="example">
-  <summary>Example</summary>
-  <p>with imageNotFoundDebugging(False):
-    waitForImage("image1.png")
-    waitForImage("image2.png")</p>
-</details>
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">imageNotFoundDebugging</span><span class="p">(</span><span class="kc">False</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">waitForImage</span><span class="p">(</span><span class="s2">&quot;image1.png&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">waitForImage</span><span class="p">(</span><span class="s2">&quot;image2.png&quot;</span><span class="p">)</span>
+</code></pre></div>
+
       <details class="quote">
-        <summary>Source code in <code>squape\settings.py</code></summary>
+        <summary>Source code in <code>D:\Coding\pagestest.github.io\documentation\project\squape\settings.py</code></summary>
         <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">237</span>
 <span class="normal">238</span>
 <span class="normal">239</span>
@@ -811,16 +824,16 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-imagenotfounddebuggin
 <span class="normal">250</span>
 <span class="normal">251</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@contextmanager</span>
 <span class="k">def</span> <span class="nf">imageNotFoundDebugging</span><span class="p">(</span><span class="n">enabled</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Allows using imageNotFoundDebugging test setting as context managers.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Allows using imageNotFoundDebugging test setting as context managers.</span>
 <span class="sd">    https://doc.qt.io/squish/squish-api.html#bool-testsettings-imagenotfounddebugging</span>
 
 <span class="sd">     Args:</span>
 <span class="sd">        enabled (bool): Whether to enable debugging when image is not found.</span>
 
-<span class="sd">    Example:</span>
-<span class="sd">        with imageNotFoundDebugging(False):</span>
-<span class="sd">            waitForImage(&quot;image1.png&quot;)</span>
-<span class="sd">            waitForImage(&quot;image2.png&quot;)</span>
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; with imageNotFoundDebugging(False):</span>
+<span class="sd">        &gt;&gt;&gt;     waitForImage(&quot;image1.png&quot;)</span>
+<span class="sd">        &gt;&gt;&gt;     waitForImage(&quot;image2.png&quot;)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">with</span> <span class="n">_ctx_settings</span><span class="p">(</span><span class="s2">&quot;imageNotFoundDebugging&quot;</span><span class="p">,</span> <span class="n">enabled</span><span class="p">):</span>
         <span class="k">yield</span>
@@ -861,7 +874,11 @@ https://doc.qt.io/squish/squish-api.html#number-testsettings-imagesearchmaxscale
           <td>
                 <code>float</code>
           </td>
-          <td><p>A float value indicating the maximum scale for image search.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A float value indicating the maximum scale for image search.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -869,14 +886,14 @@ https://doc.qt.io/squish/squish-api.html#number-testsettings-imagesearchmaxscale
     </tbody>
   </table>
 
-<details class="example">
-  <summary>Example</summary>
-  <p>with imageSearchMultiscale(), imageSearchMaxScale(150):
-    test.imagePresent("image1.png")
-    test.imagePresent("image2.png")</p>
-</details>
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">imageSearchMultiscale</span><span class="p">(),</span> <span class="n">imageSearchMaxScale</span><span class="p">(</span><span class="mi">150</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">test</span><span class="o">.</span><span class="n">imagePresent</span><span class="p">(</span><span class="s2">&quot;image1.png&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">test</span><span class="o">.</span><span class="n">imagePresent</span><span class="p">(</span><span class="s2">&quot;image2.png&quot;</span><span class="p">)</span>
+</code></pre></div>
+
       <details class="quote">
-        <summary>Source code in <code>squape\settings.py</code></summary>
+        <summary>Source code in <code>D:\Coding\pagestest.github.io\documentation\project\squape\settings.py</code></summary>
         <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">186</span>
 <span class="normal">187</span>
 <span class="normal">188</span>
@@ -893,16 +910,16 @@ https://doc.qt.io/squish/squish-api.html#number-testsettings-imagesearchmaxscale
 <span class="normal">199</span>
 <span class="normal">200</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@contextmanager</span>
 <span class="k">def</span> <span class="nf">imageSearchMaxScale</span><span class="p">(</span><span class="n">max_scale</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Allows using imageSearchMaxScale test setting as context managers.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Allows using imageSearchMaxScale test setting as context managers.</span>
 <span class="sd">    https://doc.qt.io/squish/squish-api.html#number-testsettings-imagesearchmaxscale</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        max_scale (float): A float value indicating the maximum scale for image search.</span>
 
-<span class="sd">    Example:</span>
-<span class="sd">        with imageSearchMultiscale(), imageSearchMaxScale(150):</span>
-<span class="sd">            test.imagePresent(&quot;image1.png&quot;)</span>
-<span class="sd">            test.imagePresent(&quot;image2.png&quot;)</span>
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; with imageSearchMultiscale(), imageSearchMaxScale(150):</span>
+<span class="sd">        &gt;&gt;&gt;     test.imagePresent(&quot;image1.png&quot;)</span>
+<span class="sd">        &gt;&gt;&gt;     test.imagePresent(&quot;image2.png&quot;)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">with</span> <span class="n">_ctx_settings</span><span class="p">(</span><span class="s2">&quot;imageSearchMaxScale&quot;</span><span class="p">,</span> <span class="n">max_scale</span><span class="p">):</span>
         <span class="k">yield</span>
@@ -943,7 +960,11 @@ https://doc.qt.io/squish/squish-api.html#number-testsettings-imagesearchminscale
           <td>
                 <code>float</code>
           </td>
-          <td><p>A float value indicating the minimum scale for image search.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A float value indicating the minimum scale for image search.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -951,14 +972,14 @@ https://doc.qt.io/squish/squish-api.html#number-testsettings-imagesearchminscale
     </tbody>
   </table>
 
-<details class="example">
-  <summary>Example</summary>
-  <p>with imageSearchMultiscale(), imageSearchMinScale(75):
-    test.imagePresent("image1.png")
-    test.imagePresent("image2.png")</p>
-</details>
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">imageSearchMultiscale</span><span class="p">(),</span> <span class="n">imageSearchMinScale</span><span class="p">(</span><span class="mi">75</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">test</span><span class="o">.</span><span class="n">imagePresent</span><span class="p">(</span><span class="s2">&quot;image1.png&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">test</span><span class="o">.</span><span class="n">imagePresent</span><span class="p">(</span><span class="s2">&quot;image2.png&quot;</span><span class="p">)</span>
+</code></pre></div>
+
       <details class="quote">
-        <summary>Source code in <code>squape\settings.py</code></summary>
+        <summary>Source code in <code>D:\Coding\pagestest.github.io\documentation\project\squape\settings.py</code></summary>
         <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">169</span>
 <span class="normal">170</span>
 <span class="normal">171</span>
@@ -975,16 +996,16 @@ https://doc.qt.io/squish/squish-api.html#number-testsettings-imagesearchminscale
 <span class="normal">182</span>
 <span class="normal">183</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@contextmanager</span>
 <span class="k">def</span> <span class="nf">imageSearchMinScale</span><span class="p">(</span><span class="n">min_scale</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Allows using imageSearchMinScale test setting as context managers.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Allows using imageSearchMinScale test setting as context managers.</span>
 <span class="sd">    https://doc.qt.io/squish/squish-api.html#number-testsettings-imagesearchminscale</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        min_scale (float): A float value indicating the minimum scale for image search.</span>
 
-<span class="sd">    Example:</span>
-<span class="sd">        with imageSearchMultiscale(), imageSearchMinScale(75):</span>
-<span class="sd">            test.imagePresent(&quot;image1.png&quot;)</span>
-<span class="sd">            test.imagePresent(&quot;image2.png&quot;)</span>
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; with imageSearchMultiscale(), imageSearchMinScale(75):</span>
+<span class="sd">        &gt;&gt;&gt;     test.imagePresent(&quot;image1.png&quot;)</span>
+<span class="sd">        &gt;&gt;&gt;     test.imagePresent(&quot;image2.png&quot;)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">with</span> <span class="n">_ctx_settings</span><span class="p">(</span><span class="s2">&quot;imageSearchMinScale&quot;</span><span class="p">,</span> <span class="n">min_scale</span><span class="p">):</span>
         <span class="k">yield</span>
@@ -1025,7 +1046,11 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-imagesearchmultiscale
           <td>
                 <code>bool</code>
           </td>
-          <td><p>Whether multi-scale image search is enabled. Defaulting to True</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether multi-scale image search is enabled. Defaulting to True</p>
+            </div>
+          </td>
           <td>
                 <code>True</code>
           </td>
@@ -1033,14 +1058,14 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-imagesearchmultiscale
     </tbody>
   </table>
 
-<details class="example">
-  <summary>Example</summary>
-  <p>with imageSearchMultiscale(), imageSearchMaxScale(150):
-    test.imagePresent("image1.png")
-    test.imagePresent("image2.png")</p>
-</details>
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">imageSearchMultiscale</span><span class="p">(),</span> <span class="n">imageSearchMaxScale</span><span class="p">(</span><span class="mi">150</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">test</span><span class="o">.</span><span class="n">imagePresent</span><span class="p">(</span><span class="s2">&quot;image1.png&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">test</span><span class="o">.</span><span class="n">imagePresent</span><span class="p">(</span><span class="s2">&quot;image2.png&quot;</span><span class="p">)</span>
+</code></pre></div>
+
       <details class="quote">
-        <summary>Source code in <code>squape\settings.py</code></summary>
+        <summary>Source code in <code>D:\Coding\pagestest.github.io\documentation\project\squape\settings.py</code></summary>
         <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">151</span>
 <span class="normal">152</span>
 <span class="normal">153</span>
@@ -1058,16 +1083,16 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-imagesearchmultiscale
 <span class="normal">165</span>
 <span class="normal">166</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@contextmanager</span>
 <span class="k">def</span> <span class="nf">imageSearchMultiscale</span><span class="p">(</span><span class="n">enabled</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Allows using imageSearchMultiscale test setting as context managers.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Allows using imageSearchMultiscale test setting as context managers.</span>
 <span class="sd">    https://doc.qt.io/squish/squish-api.html#bool-testsettings-imagesearchmultiscale</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        enabled (bool): Whether multi-scale image search is enabled. Defaulting to True</span>
 
-<span class="sd">    Example:</span>
-<span class="sd">        with imageSearchMultiscale(), imageSearchMaxScale(150):</span>
-<span class="sd">            test.imagePresent(&quot;image1.png&quot;)</span>
-<span class="sd">            test.imagePresent(&quot;image2.png&quot;)</span>
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; with imageSearchMultiscale(), imageSearchMaxScale(150):</span>
+<span class="sd">        &gt;&gt;&gt;     test.imagePresent(&quot;image1.png&quot;)</span>
+<span class="sd">        &gt;&gt;&gt;     test.imagePresent(&quot;image2.png&quot;)</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">with</span> <span class="n">_ctx_settings</span><span class="p">(</span><span class="s2">&quot;imageSearchMultiscale&quot;</span><span class="p">,</span> <span class="n">enabled</span><span class="p">):</span>
@@ -1109,7 +1134,11 @@ https://doc.qt.io/squish/squish-api.html#number-testsettings-imagesearchthreshol
           <td>
                 <code>float</code>
           </td>
-          <td><p>the threshold for image search.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>the threshold for image search.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1117,13 +1146,13 @@ https://doc.qt.io/squish/squish-api.html#number-testsettings-imagesearchthreshol
     </tbody>
   </table>
 
-<details class="example">
-  <summary>Example</summary>
-  <p>with imageSearchTolerant(), imageSearchThreshold(95):
-    test.imagePresent("image.png")</p>
-</details>
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">imageSearchTolerant</span><span class="p">(),</span> <span class="n">imageSearchThreshold</span><span class="p">(</span><span class="mi">95</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">test</span><span class="o">.</span><span class="n">imagePresent</span><span class="p">(</span><span class="s2">&quot;image.png&quot;</span><span class="p">)</span>
+</code></pre></div>
+
       <details class="quote">
-        <summary>Source code in <code>squape\settings.py</code></summary>
+        <summary>Source code in <code>D:\Coding\pagestest.github.io\documentation\project\squape\settings.py</code></summary>
         <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">135</span>
 <span class="normal">136</span>
 <span class="normal">137</span>
@@ -1139,15 +1168,15 @@ https://doc.qt.io/squish/squish-api.html#number-testsettings-imagesearchthreshol
 <span class="normal">147</span>
 <span class="normal">148</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@contextmanager</span>
 <span class="k">def</span> <span class="nf">imageSearchThreshold</span><span class="p">(</span><span class="n">threshold</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Allows using imageSearchThreshold test setting as context managers.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Allows using imageSearchThreshold test setting as context managers.</span>
 <span class="sd">    https://doc.qt.io/squish/squish-api.html#number-testsettings-imagesearchthreshold</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        threshold (float): the threshold for image search.</span>
 
-<span class="sd">    Example:</span>
-<span class="sd">        with imageSearchTolerant(), imageSearchThreshold(95):</span>
-<span class="sd">            test.imagePresent(&quot;image.png&quot;)</span>
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; with imageSearchTolerant(), imageSearchThreshold(95):</span>
+<span class="sd">        &gt;&gt;&gt;     test.imagePresent(&quot;image.png&quot;)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">with</span> <span class="n">_ctx_settings</span><span class="p">(</span><span class="s2">&quot;imageSearchThreshold&quot;</span><span class="p">,</span> <span class="n">threshold</span><span class="p">):</span>
         <span class="k">yield</span>
@@ -1188,7 +1217,11 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-imagesearchtolerant</
           <td>
                 <code>bool</code>
           </td>
-          <td><p>Whether image search with tolerance is enabled.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether image search with tolerance is enabled.</p>
+            </div>
+          </td>
           <td>
                 <code>True</code>
           </td>
@@ -1196,13 +1229,13 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-imagesearchtolerant</
     </tbody>
   </table>
 
-<details class="example">
-  <summary>Example</summary>
-  <p>with imageSearchTolerant(), imageSearchThreshold(95):
-    test.imagePresent()</p>
-</details>
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">imageSearchTolerant</span><span class="p">(),</span> <span class="n">imageSearchThreshold</span><span class="p">(</span><span class="mi">95</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">test</span><span class="o">.</span><span class="n">imagePresent</span><span class="p">()</span>
+</code></pre></div>
+
       <details class="quote">
-        <summary>Source code in <code>squape\settings.py</code></summary>
+        <summary>Source code in <code>D:\Coding\pagestest.github.io\documentation\project\squape\settings.py</code></summary>
         <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">117</span>
 <span class="normal">118</span>
 <span class="normal">119</span>
@@ -1220,16 +1253,16 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-imagesearchtolerant</
 <span class="normal">131</span>
 <span class="normal">132</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@contextmanager</span>
 <span class="k">def</span> <span class="nf">imageSearchTolerant</span><span class="p">(</span><span class="n">enabled</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Allows using imageSearchTolerant test setting as context managers.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Allows using imageSearchTolerant test setting as context managers.</span>
 <span class="sd">    https://doc.qt.io/squish/squish-api.html#bool-testsettings-imagesearchtolerant</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        enabled (bool): Whether image search with tolerance is enabled.</span>
 <span class="sd">        Defaulting to True.</span>
 
-<span class="sd">    Example:</span>
-<span class="sd">        with imageSearchTolerant(), imageSearchThreshold(95):</span>
-<span class="sd">            test.imagePresent()</span>
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; with imageSearchTolerant(), imageSearchThreshold(95):</span>
+<span class="sd">        &gt;&gt;&gt;     test.imagePresent()</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">with</span> <span class="n">_ctx_settings</span><span class="p">(</span><span class="s2">&quot;imageSearchTolerant&quot;</span><span class="p">,</span> <span class="n">enabled</span><span class="p">):</span>
@@ -1271,7 +1304,11 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-logscreenshotonfail</
           <td>
                 <code>bool</code>
           </td>
-          <td><p>A boolean value indicating whether to enable logging</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A boolean value indicating whether to enable logging</p>
+            </div>
+          </td>
           <td>
                 <code>True</code>
           </td>
@@ -1279,13 +1316,13 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-logscreenshotonfail</
     </tbody>
   </table>
 
-<details class="example">
-  <summary>Example</summary>
-  <p>with logScreenshotOnFail():
-    # code with verifications</p>
-</details>
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">logScreenshotOnFail</span><span class="p">():</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="c1"># code with verifications</span>
+</code></pre></div>
+
       <details class="quote">
-        <summary>Source code in <code>squape\settings.py</code></summary>
+        <summary>Source code in <code>D:\Coding\pagestest.github.io\documentation\project\squape\settings.py</code></summary>
         <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">66</span>
 <span class="normal">67</span>
 <span class="normal">68</span>
@@ -1303,16 +1340,16 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-logscreenshotonfail</
 <span class="normal">80</span>
 <span class="normal">81</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@contextmanager</span>
 <span class="k">def</span> <span class="nf">logScreenshotOnFail</span><span class="p">(</span><span class="n">enabled</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Allows using logScreenshotOnFail test setting as context managers.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Allows using logScreenshotOnFail test setting as context managers.</span>
 <span class="sd">    https://doc.qt.io/squish/squish-api.html#bool-testsettings-logscreenshotonfail</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        enabled (bool): A boolean value indicating whether to enable logging</span>
 <span class="sd">        of screenshots on FAIL test result. Defaulting to True.</span>
 
-<span class="sd">    Example:</span>
-<span class="sd">        with logScreenshotOnFail():</span>
-<span class="sd">            # code with verifications</span>
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; with logScreenshotOnFail():</span>
+<span class="sd">        &gt;&gt;&gt;     # code with verifications</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">with</span> <span class="n">_ctx_settings</span><span class="p">(</span><span class="s2">&quot;logScreenshotOnFail&quot;</span><span class="p">,</span> <span class="n">enabled</span><span class="p">):</span>
@@ -1354,7 +1391,11 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-logscreenshotonpass</
           <td>
                 <code>bool</code>
           </td>
-          <td><p>A boolean value indicating whether to enable logging</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A boolean value indicating whether to enable logging</p>
+            </div>
+          </td>
           <td>
                 <code>True</code>
           </td>
@@ -1362,13 +1403,13 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-logscreenshotonpass</
     </tbody>
   </table>
 
-<details class="example">
-  <summary>Example</summary>
-  <p>with logScreenshotOnPass():
-    # code with verifications</p>
-</details>
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">logScreenshotOnPass</span><span class="p">():</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="c1"># code with verifications</span>
+</code></pre></div>
+
       <details class="quote">
-        <summary>Source code in <code>squape\settings.py</code></summary>
+        <summary>Source code in <code>D:\Coding\pagestest.github.io\documentation\project\squape\settings.py</code></summary>
         <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">49</span>
 <span class="normal">50</span>
 <span class="normal">51</span>
@@ -1385,16 +1426,16 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-logscreenshotonpass</
 <span class="normal">62</span>
 <span class="normal">63</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@contextmanager</span>
 <span class="k">def</span> <span class="nf">logScreenshotOnPass</span><span class="p">(</span><span class="n">enabled</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Allows using logScreenshotOnPass test setting as context managers.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Allows using logScreenshotOnPass test setting as context managers.</span>
 <span class="sd">    https://doc.qt.io/squish/squish-api.html#bool-testsettings-logscreenshotonpass</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        enabled (bool): A boolean value indicating whether to enable logging</span>
 <span class="sd">        of screenshots on PASS test result. Defaulting to True.</span>
 
-<span class="sd">    Example:</span>
-<span class="sd">        with logScreenshotOnPass():</span>
-<span class="sd">            # code with verifications</span>
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; with logScreenshotOnPass():</span>
+<span class="sd">        &gt;&gt;&gt;     # code with verifications</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">with</span> <span class="n">_ctx_settings</span><span class="p">(</span><span class="s2">&quot;logScreenshotOnPass&quot;</span><span class="p">,</span> <span class="n">enabled</span><span class="p">):</span>
         <span class="k">yield</span>
@@ -1422,13 +1463,13 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-logscreenshotonwarnin
     enabled (bool): A boolean value indicating whether to enable logging
     of screenshots on warning log entry. Defaulting to True.</p>
 
-<details class="example">
-  <summary>Example</summary>
-  <p>with logScreenshotOnWarning():
-    # code where warning messages might happen</p>
-</details>
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">logScreenshotOnWarning</span><span class="p">():</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="c1"># code where warning messages might happen</span>
+</code></pre></div>
+
       <details class="quote">
-        <summary>Source code in <code>squape\settings.py</code></summary>
+        <summary>Source code in <code>D:\Coding\pagestest.github.io\documentation\project\squape\settings.py</code></summary>
         <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">84</span>
 <span class="normal">85</span>
 <span class="normal">86</span>
@@ -1445,16 +1486,16 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-logscreenshotonwarnin
 <span class="normal">97</span>
 <span class="normal">98</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@contextmanager</span>
 <span class="k">def</span> <span class="nf">logScreenshotOnWarning</span><span class="p">(</span><span class="n">enabled</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Allows using logScreenshotOnWarning test setting as context managers.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Allows using logScreenshotOnWarning test setting as context managers.</span>
 <span class="sd">    https://doc.qt.io/squish/squish-api.html#bool-testsettings-logscreenshotonwarning</span>
 
 <span class="sd">     Args:</span>
 <span class="sd">        enabled (bool): A boolean value indicating whether to enable logging</span>
 <span class="sd">        of screenshots on warning log entry. Defaulting to True.</span>
 
-<span class="sd">    Example:</span>
-<span class="sd">        with logScreenshotOnWarning():</span>
-<span class="sd">            # code where warning messages might happen</span>
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; with logScreenshotOnWarning():</span>
+<span class="sd">        &gt;&gt;&gt;     # code where warning messages might happen</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">with</span> <span class="n">_ctx_settings</span><span class="p">(</span><span class="s2">&quot;logScreenshotOnWarning&quot;</span><span class="p">,</span> <span class="n">enabled</span><span class="p">):</span>
         <span class="k">yield</span>
@@ -1495,7 +1536,11 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-objectnotfounddebuggi
           <td>
                 <code>bool</code>
           </td>
-          <td><p>Whether to enable debugging when object is not found.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether to enable debugging when object is not found.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1503,14 +1548,14 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-objectnotfounddebuggi
     </tbody>
   </table>
 
-<details class="example">
-  <summary>Example</summary>
-  <p>with objectNotFoundDebugging(False):
-    waitForObject(names.obj1)
-    waitForObject(names.obj2)</p>
-</details>
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">objectNotFoundDebugging</span><span class="p">(</span><span class="kc">False</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">waitForObject</span><span class="p">(</span><span class="n">names</span><span class="o">.</span><span class="n">obj1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">waitForObject</span><span class="p">(</span><span class="n">names</span><span class="o">.</span><span class="n">obj2</span><span class="p">)</span>
+</code></pre></div>
+
       <details class="quote">
-        <summary>Source code in <code>squape\settings.py</code></summary>
+        <summary>Source code in <code>D:\Coding\pagestest.github.io\documentation\project\squape\settings.py</code></summary>
         <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">220</span>
 <span class="normal">221</span>
 <span class="normal">222</span>
@@ -1527,16 +1572,16 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-objectnotfounddebuggi
 <span class="normal">233</span>
 <span class="normal">234</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@contextmanager</span>
 <span class="k">def</span> <span class="nf">objectNotFoundDebugging</span><span class="p">(</span><span class="n">enabled</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Allows using objectNotFoundDebugging test setting as context managers.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Allows using objectNotFoundDebugging test setting as context managers.</span>
 <span class="sd">    https://doc.qt.io/squish/squish-api.html#bool-testsettings-objectnotfounddebugging</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        enabled (bool): Whether to enable debugging when object is not found.</span>
 
-<span class="sd">    Example:</span>
-<span class="sd">        with objectNotFoundDebugging(False):</span>
-<span class="sd">            waitForObject(names.obj1)</span>
-<span class="sd">            waitForObject(names.obj2)</span>
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; with objectNotFoundDebugging(False):</span>
+<span class="sd">        &gt;&gt;&gt;     waitForObject(names.obj1)</span>
+<span class="sd">        &gt;&gt;&gt;     waitForObject(names.obj2)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">with</span> <span class="n">_ctx_settings</span><span class="p">(</span><span class="s2">&quot;objectNotFoundDebugging&quot;</span><span class="p">,</span> <span class="n">enabled</span><span class="p">):</span>
         <span class="k">yield</span>
@@ -1577,7 +1622,11 @@ https://doc.qt.io/squish/squish-api.html#integer-testsettings-retryduration</p>
           <td>
                 <code>int</code>
           </td>
-          <td><p>The duration in milliseconds after which</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>The duration in milliseconds after which</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1585,13 +1634,13 @@ https://doc.qt.io/squish/squish-api.html#integer-testsettings-retryduration</p>
     </tbody>
   </table>
 
-<details class="example">
-  <summary>Example</summary>
-  <p>with retryDuration(5000):
-    test.vp("VP1")</p>
-</details>
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">retryDuration</span><span class="p">(</span><span class="mi">5000</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">test</span><span class="o">.</span><span class="n">vp</span><span class="p">(</span><span class="s2">&quot;VP1&quot;</span><span class="p">)</span>
+</code></pre></div>
+
       <details class="quote">
-        <summary>Source code in <code>squape\settings.py</code></summary>
+        <summary>Source code in <code>D:\Coding\pagestest.github.io\documentation\project\squape\settings.py</code></summary>
         <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">324</span>
 <span class="normal">325</span>
 <span class="normal">326</span>
@@ -1609,16 +1658,16 @@ https://doc.qt.io/squish/squish-api.html#integer-testsettings-retryduration</p>
 <span class="normal">338</span>
 <span class="normal">339</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@contextmanager</span>
 <span class="k">def</span> <span class="nf">retryDuration</span><span class="p">(</span><span class="n">duration_ms</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Allows using retryDuration test setting as context managers.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Allows using retryDuration test setting as context managers.</span>
 <span class="sd">    https://doc.qt.io/squish/squish-api.html#integer-testsettings-retryduration</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        duration_ms (int): The duration in milliseconds after which</span>
 <span class="sd">        the verification fails</span>
 
-<span class="sd">    Example:</span>
-<span class="sd">        with retryDuration(5000):</span>
-<span class="sd">            test.vp(&quot;VP1&quot;)</span>
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; with retryDuration(5000):</span>
+<span class="sd">        &gt;&gt;&gt;     test.vp(&quot;VP1&quot;)</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">with</span> <span class="n">_ctx_settings</span><span class="p">(</span><span class="s2">&quot;retryDuration&quot;</span><span class="p">,</span> <span class="n">duration_ms</span><span class="p">):</span>
@@ -1660,7 +1709,11 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-silentverifications</
           <td>
                 <code>bool</code>
           </td>
-          <td><p>Whether silent verifications are enabled. Defaulting to True</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether silent verifications are enabled. Defaulting to True</p>
+            </div>
+          </td>
           <td>
                 <code>True</code>
           </td>
@@ -1668,13 +1721,13 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-silentverifications</
     </tbody>
   </table>
 
-<details class="example">
-  <summary>Example</summary>
-  <p>with silentVerifications():
-    # code with test.vp statements</p>
-</details>
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">silentVerifications</span><span class="p">():</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="c1"># code with test.vp statements</span>
+</code></pre></div>
+
       <details class="quote">
-        <summary>Source code in <code>squape\settings.py</code></summary>
+        <summary>Source code in <code>D:\Coding\pagestest.github.io\documentation\project\squape\settings.py</code></summary>
         <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">101</span>
 <span class="normal">102</span>
 <span class="normal">103</span>
@@ -1690,15 +1743,15 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-silentverifications</
 <span class="normal">113</span>
 <span class="normal">114</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@contextmanager</span>
 <span class="k">def</span> <span class="nf">silentVerifications</span><span class="p">(</span><span class="n">enabled</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Allows using silentVerifications test setting as context managers.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Allows using silentVerifications test setting as context managers.</span>
 <span class="sd">    https://doc.qt.io/squish/squish-api.html#bool-testsettings-silentverifications</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        enabled (bool): Whether silent verifications are enabled. Defaulting to True</span>
 
-<span class="sd">    Example:</span>
-<span class="sd">        with silentVerifications():</span>
-<span class="sd">            # code with test.vp statements</span>
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; with silentVerifications():</span>
+<span class="sd">        &gt;&gt;&gt;     # code with test.vp statements</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">with</span> <span class="n">_ctx_settings</span><span class="p">(</span><span class="s2">&quot;silentVerifications&quot;</span><span class="p">,</span> <span class="n">enabled</span><span class="p">):</span>
         <span class="k">yield</span>
@@ -1739,7 +1792,11 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-textnotfounddebugging
           <td>
                 <code>bool</code>
           </td>
-          <td><p>Whether to enable debugging when a OCR Text is not found.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether to enable debugging when a OCR Text is not found.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1747,14 +1804,14 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-textnotfounddebugging
     </tbody>
   </table>
 
-<details class="example">
-  <summary>Example</summary>
-  <p>with textNotFoundDebugging(False):
-    waitForOcrText("Frog")
-    waitForOcrText("Alpaca")</p>
-</details>
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">textNotFoundDebugging</span><span class="p">(</span><span class="kc">False</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">waitForOcrText</span><span class="p">(</span><span class="s2">&quot;Frog&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">waitForOcrText</span><span class="p">(</span><span class="s2">&quot;Alpaca&quot;</span><span class="p">)</span>
+</code></pre></div>
+
       <details class="quote">
-        <summary>Source code in <code>squape\settings.py</code></summary>
+        <summary>Source code in <code>D:\Coding\pagestest.github.io\documentation\project\squape\settings.py</code></summary>
         <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">254</span>
 <span class="normal">255</span>
 <span class="normal">256</span>
@@ -1771,16 +1828,16 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-textnotfounddebugging
 <span class="normal">267</span>
 <span class="normal">268</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@contextmanager</span>
 <span class="k">def</span> <span class="nf">textNotFoundDebugging</span><span class="p">(</span><span class="n">enabled</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Allows using textNotFoundDebugging test setting as context managers.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Allows using textNotFoundDebugging test setting as context managers.</span>
 <span class="sd">    https://doc.qt.io/squish/squish-api.html#bool-testsettings-textnotfounddebugging</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        enabled (bool): Whether to enable debugging when a OCR Text is not found.</span>
 
-<span class="sd">    Example:</span>
-<span class="sd">        with textNotFoundDebugging(False):</span>
-<span class="sd">            waitForOcrText(&quot;Frog&quot;)</span>
-<span class="sd">            waitForOcrText(&quot;Alpaca&quot;)</span>
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; with textNotFoundDebugging(False):</span>
+<span class="sd">        &gt;&gt;&gt;     waitForOcrText(&quot;Frog&quot;)</span>
+<span class="sd">        &gt;&gt;&gt;     waitForOcrText(&quot;Alpaca&quot;)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">with</span> <span class="n">_ctx_settings</span><span class="p">(</span><span class="s2">&quot;textNotFoundDebugging&quot;</span><span class="p">,</span> <span class="n">enabled</span><span class="p">):</span>
         <span class="k">yield</span>
@@ -1821,19 +1878,25 @@ https://doc.qt.io/squish/squish-api.html#bool-testsettings-throwonfailure</p>
           <td>
                 <code>bool</code>
           </td>
-          <td><p>Whether to enable to raise a script error</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>Whether to enable to raise a script error</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
         </tr>
     </tbody>
   </table>
-      <p>Example:
-with throwOnFailure():
-    # code with verifications</p>
+
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">throwOnFailure</span><span class="p">():</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="c1"># code with verifications</span>
+</code></pre></div>
 
       <details class="quote">
-        <summary>Source code in <code>squape\settings.py</code></summary>
+        <summary>Source code in <code>D:\Coding\pagestest.github.io\documentation\project\squape\settings.py</code></summary>
         <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">306</span>
 <span class="normal">307</span>
 <span class="normal">308</span>
@@ -1851,16 +1914,16 @@ with throwOnFailure():
 <span class="normal">320</span>
 <span class="normal">321</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@contextmanager</span>
 <span class="k">def</span> <span class="nf">throwOnFailure</span><span class="p">(</span><span class="n">enabled</span><span class="p">:</span> <span class="nb">bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Allows using throwOnFailure test setting as context managers.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Allows using throwOnFailure test setting as context managers.</span>
 <span class="sd">    https://doc.qt.io/squish/squish-api.html#bool-testsettings-throwonfailure</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        enabled (bool): Whether to enable to raise a script error</span>
 <span class="sd">        on every failed verification</span>
 
-<span class="sd">    Example:</span>
-<span class="sd">    with throwOnFailure():</span>
-<span class="sd">        # code with verifications</span>
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; with throwOnFailure():</span>
+<span class="sd">        &gt;&gt;&gt;     # code with verifications</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">with</span> <span class="n">_ctx_settings</span><span class="p">(</span><span class="s2">&quot;throwOnFailure&quot;</span><span class="p">,</span> <span class="n">enabled</span><span class="p">):</span>
@@ -1902,7 +1965,11 @@ https://doc.qt.io/squish/squish-api.html#integer-testsettings-waitforobjecttimeo
           <td>
                 <code>int</code>
           </td>
-          <td><p>A integer value indicating the timeout in ms.</p></td>
+          <td>
+            <div class="doc-md-description">
+              <p>A integer value indicating the timeout in ms.</p>
+            </div>
+          </td>
           <td>
               <em>required</em>
           </td>
@@ -1910,14 +1977,14 @@ https://doc.qt.io/squish/squish-api.html#integer-testsettings-waitforobjecttimeo
     </tbody>
   </table>
 
-<details class="example">
-  <summary>Example</summary>
-  <p>with waitForObjectTimeout(500):
-    waitForObject(names.obj1)
-    waitForObject(names.obj2)</p>
-</details>
+<p><strong>Examples:</strong></p>
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">waitForObjectTimeout</span><span class="p">(</span><span class="mi">500</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">waitForObject</span><span class="p">(</span><span class="n">names</span><span class="o">.</span><span class="n">obj1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">waitForObject</span><span class="p">(</span><span class="n">names</span><span class="o">.</span><span class="n">obj2</span><span class="p">)</span>
+</code></pre></div>
+
       <details class="quote">
-        <summary>Source code in <code>squape\settings.py</code></summary>
+        <summary>Source code in <code>D:\Coding\pagestest.github.io\documentation\project\squape\settings.py</code></summary>
         <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">203</span>
 <span class="normal">204</span>
 <span class="normal">205</span>
@@ -1934,16 +2001,16 @@ https://doc.qt.io/squish/squish-api.html#integer-testsettings-waitforobjecttimeo
 <span class="normal">216</span>
 <span class="normal">217</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@contextmanager</span>
 <span class="k">def</span> <span class="nf">waitForObjectTimeout</span><span class="p">(</span><span class="n">timeout_ms</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Allows using waitForObjectTimeout test setting as context managers.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Allows using waitForObjectTimeout test setting as context managers.</span>
 <span class="sd">    https://doc.qt.io/squish/squish-api.html#integer-testsettings-waitforobjecttimeout</span>
 
 <span class="sd">    Args:</span>
 <span class="sd">        timeout_ms (int): A integer value indicating the timeout in ms.</span>
 
-<span class="sd">    Example:</span>
-<span class="sd">        with waitForObjectTimeout(500):</span>
-<span class="sd">            waitForObject(names.obj1)</span>
-<span class="sd">            waitForObject(names.obj2)</span>
+<span class="sd">    Examples:</span>
+<span class="sd">        &gt;&gt;&gt; with waitForObjectTimeout(500):</span>
+<span class="sd">        &gt;&gt;&gt;     waitForObject(names.obj1)</span>
+<span class="sd">        &gt;&gt;&gt;     waitForObject(names.obj2)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">with</span> <span class="n">_ctx_settings</span><span class="p">(</span><span class="s2">&quot;waitForObjectTimeout&quot;</span><span class="p">,</span> <span class="n">timeout_ms</span><span class="p">):</span>
         <span class="k">yield</span>
@@ -1961,51 +2028,20 @@ https://doc.qt.io/squish/squish-api.html#integer-testsettings-waitforobjecttimeo
 
 </div>
 
-              
-            </article>
-            
-          </div>
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
         </div>
         
       </main>
       
         <footer class="md-footer">
-  
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../report/" class="md-footer__link md-footer__link--prev" aria-label="Previous: report" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              report
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../video/" class="md-footer__link md-footer__link--next" aria-label="Next: video" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              video
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -2027,10 +2063,11 @@ https://doc.qt.io/squish/squish-api.html#integer-testsettings-waitforobjecttimeo
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a51614de.min.js"></script>
       
     
   </body>
